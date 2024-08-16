@@ -1,0 +1,5 @@
+exportPattern("^[[:alpha:]]+")
+importFrom(Rcpp, evalCpp)
+importFrom(stats,rgamma,rnorm,runif,rbinom,quantile,median)
+useDynLib(bayrhm, .registration = TRUE)
+

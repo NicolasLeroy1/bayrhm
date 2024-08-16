@@ -1,0 +1,25 @@
+Package: bayrhm
+Type: Package
+Title: Bayesian Regional Heritability Mapping
+Version: 0.1.0
+Author: Nicolas Leroy [aut, cre]
+Maintainer: Nicolas Leroy <nicolas.leroy555@gmail.com>
+Description: 
+    This package provides three bayesian models implementation for genetic 
+    cartography, the three models follow the Regional Heritability Mapping (RHM)
+    framework, using linear mixed models to ajust random effets to genomic
+    regions. The models differ by their regularization priors, the first use a
+    horseshoe prior, the second a fusion-horseshoe to assume link between 
+    adjacent regions and , and the third use a fused-horseshoe prior to mix 
+    between the two precedent versions.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    Rcpp (>= 1.0.12),
+    stats
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.1
