@@ -14,7 +14,7 @@ With $y$ the phenotype, $u_l$ the random effect associated with a similarity mat
 
 ## Regularizations :
 
-All the regularizations prior are used to shrink non-pertinent $lambda_l$ coefficients to zero.
+All the regularizations prior are used to shrink non-pertinent $\lambda_l$ coefficients to zero.
 
 + The horseshoe prior doesn't assume similarity between adjacent genetic region and shrink all coefficients the same way.
 + The fusion-horseshoe prio assume strong similarity between adjacent genetic region and shrink only the regions situated at the end and beginning of chromosomes.
