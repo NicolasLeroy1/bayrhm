@@ -8,10 +8,8 @@ Description:
     This package provides three bayesian models implementation for genetic 
     cartography, the three models follow the Regional Heritability Mapping (RHM)
     framework, using linear mixed models to ajust random effets to genomic
-    regions. The models differ by their regularization priors, the first use a
-    horseshoe prior, the second a fusion-horseshoe to assume link between 
-    adjacent regions and , and the third use a fused-horseshoe prior to mix 
-    between the two precedent versions.
+    regions. The models differ by the regularization priors applied to variance
+    coefficients.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
