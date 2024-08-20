@@ -25,8 +25,9 @@ $$
 + The fusion-horseshoe prio assume strong similarity between adjacent genetic region and shrink only the regions situated at the end and beginning of chromosomes.
 
 $$
-\lambda_l - \lambda_{l-1} \sim \mathcal N(0,\sigma^2\tau^2\omega_l^2) \quad \quad \lambda_1 \sim \mathcal N(0,\sigma^2\tau^2\omega_1^2) \quad \quad \lambda_L \sim \mathcal N(0,\sigma^2\tau^2\omega_L^2) \quad \quad \omega_l \sim \mathcal C^+(0,1)
+\lambda_l - \lambda_{l-1} \sim \mathcal N(0,\sigma^2\tau^2\omega_l^2) \quad \quad \omega_l \sim \mathcal C^+(0,1)
 $$
+
 $$
 \lambda_1 \sim \mathcal N(0,\sigma^2w_1^2) \quad \quad \lambda_L \sim \mathcal N(0,\sigma^2w_2^2) \quad \quad w_l \sim \mathcal C^+(0,1)
 $$
