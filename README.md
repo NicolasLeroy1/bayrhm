@@ -29,13 +29,16 @@ $$
 $$
 
 $$
-\lambda_1 \sim \mathcal N(0,\sigma^2w_1^2) \quad \quad \lambda_L \sim \mathcal N(0,\sigma^2w_2^2) \quad \quad w_l \sim \mathcal C^+(0,1)
+\lambda_1 \sim \mathcal N(0,\sigma^2w_1^2) \quad \quad \lambda_L \sim \mathcal N(0,\sigma^2w_2^2) \quad \quad w_1,w_2 \sim \mathcal C^+(0,1)
 $$
 
 + The fused-horseshoe prior is a mix between the first and second prior , assuming similarity between adjacent regions, and shrinking all coefficients the same way.
+
 $$
 \lambda_l - \lambda_{l-1} \sim \mathcal N(0,\sigma^2\tau^2\omega_l^2)
+
 $$
+
 $$
 \lambda_l|\lambda_{l-1}-\lambda_l \sim \mathcal N(0,\sigma^2w_l^2) \quad \quad 
 $$
