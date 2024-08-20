@@ -1,6 +1,6 @@
 # bayrhm
  
-The `bayrhm` package implements 3 different bayesian regularizations priors on a multiple random effects model used in genetic cartography called RHM model., inspired by [heuclin and al.](https://institut-agro-montpellier.hal.science/hal-04238536/)
+The `bayrhm` package implements 3 different bayesian regularization priors on a multiple random effects model used in genetic cartography called RHM model., inspired by [heuclin and al.](https://institut-agro-montpellier.hal.science/hal-04238536/)
 
 ## RHM model :
 
