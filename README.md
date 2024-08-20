@@ -4,7 +4,7 @@ The `bayrhm` package implements 3 different bayesian regularization priors inspi
 
 ## RHM model :
 
-The standard RHM model is as follow :
+The RHM model we use is as follow :
 
 $$
 y = \sum_l \lambda_l u_l + \epsilon \quad \quad u_l \sim \mathcal N(0,A_l)\quad \quad \epsilon \sim \mathcal N(0,\sigma^2)
