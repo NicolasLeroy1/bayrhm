@@ -19,7 +19,7 @@ All the regularizations prior are used to shrink non-pertinent $\lambda_l$ coeff
 + The horseshoe prior doesn't assume similarity between adjacent genetic region and shrink all coefficients the same way.
 
 $$
-\lambda_l \sim \mathcal N(0,\sigma^2\tau^2W_l^2) \tau^2 \sim \mathcal C^+(0,1) \quad \quad w_l \sim \mathcal C^+(0,1)
+\lambda_l \sim \mathcal N(0,\sigma^2\tau^2W_l^2) \quad \quad \tau^2 \sim \mathcal C^+(0,1) \quad \quad w_l \sim \mathcal C^+(0,1)
 $$
 
 + The fusion-horseshoe prio assume strong similarity between adjacent genetic region and shrink only the regions situated at the end and beginning of chromosomes.
@@ -35,7 +35,7 @@ $$
 + The fused-horseshoe prior is a mix between the first and second prior , assuming similarity between adjacent regions, and shrinking all coefficients the same way.
 
 $$
-\lambda_l - \lambda_{l-1} \sim \mathcal N(0,\sigma^2\tau^2\omega_l^2)
+\lambda_l - \lambda_{l-1} \sim \mathcal N(0,\sigma^2\tau^2\omega_l^2) \quad \quad \omega_l \sim \mathcal C^+(0,1)
 $$
 
 $$
