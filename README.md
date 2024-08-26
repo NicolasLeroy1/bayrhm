@@ -42,3 +42,6 @@ $$
 \lambda_l|\lambda_{l-1}-\lambda_l \sim \mathcal N(0,\sigma^2w_l^2) \quad \quad w_l \sim \mathcal C^+(0,1)
 $$
 
+## Installation
+
+Use `devtools::install_github("nicolasleroy1/bayrhm")` in R console.
