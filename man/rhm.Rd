@@ -40,7 +40,7 @@ rhm(
 
 \item{similarity_method}{Character, method to compute similarity matrices, must be one of "yang", "van_raden", "simple".}
 
-\item{regularization_method}{Character, method for regularization in RHM, must be one of "horseshoe", "fused", "fusion", "fast","horseshoe_max","fused_max","fusion_max".}
+\item{regularization_method}{Character, method for regularization in RHM, must be one of "horseshoe", "fused", "fusion", "fast".}
 
 \item{svd_inertia}{Numeric, the proportion of inertia to keep during Singular Value Decomposition (SVD).}
 
