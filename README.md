@@ -52,7 +52,7 @@ $$
 We use following mixture of inverse-gammas to sample the $\tau^2$ hyperparameter of the horseshoe prior :
 
 $$
-\tau^2 \sim \mathcal C^+(0,1) \quad \quad \tau\mid\xi = IG \left(\frac 1 2,\frac{1}{\xi^2}\right) \quad \quad \xi \sim \mathcal IG\left(\frac{1}{2},\frac{1}{2}\right)
+\tau^2 \sim \mathcal C^+(0,1) \quad \quad \tau\mid\xi = IG \left(\frac 1 2,\frac{1}{\xi}\right) \quad \quad \xi \sim \mathcal IG\left(\frac{1}{2},\frac{1}{2}\right)
 $$
 
 ## Marginal posterior distributions :
