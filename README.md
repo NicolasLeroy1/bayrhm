@@ -52,7 +52,7 @@ $$
 We use an alternative representation of the Half Caucy distribution over $x^2$ through the following mixture of inverse-gammas for $x$ :
 
 $$
-x\sim C^+(0,1) \quad\Leftrightarrow\quad x|\xi \sim \mathcal{IG}(1/2,1/\xi) \quad \quad \xi \sim \mathcal{IG}(1/2,1)
+x^2\sim C^+(0,1) \quad\Leftrightarrow\quad x|\xi \sim \mathcal{IG}(1/2,1/\xi) \quad \quad \xi \sim \mathcal{IG}(1/2,1)
 $$
 
 The conditional distribution of the hyper-parameter is then :
