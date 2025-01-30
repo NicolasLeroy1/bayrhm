@@ -49,10 +49,10 @@ $$
 
 ## Cauchy prior as a mixture of inverse-gammas :
 
-We use following mixture of inverse-gammas to sample the $\tau^2$ hyperparameter of the horseshoe prior :
+We use an alternative representation of the Half Caucy distribution over $x^2$ through the following mixture of inverse-gammas for $x$ :
 
 $$
-\tau^2 \sim \mathcal C^+(0,1) \quad \quad \tau\mid\xi = IG \left(\frac 1 2,\frac{1}{\xi}\right) \quad \quad \xi \sim \mathcal IG\left(\frac{1}{2},\frac{1}{2}\right)
+x\sim C^+(0,1) \Leftrightarrow x|\xi \sim \mathcal{IG}(1/2,1/\xi) \quad \quad \xi \sim \mathcal{IG}(1/2,1) \implies \xi|x \sim \mathcal{IG}(1/2,1/(1+x))
 $$
 
 ## Marginal posterior distributions :
