@@ -82,7 +82,11 @@ $$
 $$
 
 $$
-\tau\mid\xi \sim IG(1/2,1/\xi) \quad \xi \sim IG(1/2,1) \implies U(\tau\mid\xi) = \frac{3}{2}\log(\tau) + \frac{1}{\xi\tau} + \frac{1}{2}\log(\xi)
+\tau\mid\xi \sim IG(1/2,1/\xi) \implies U(\tau\mid\xi) = \frac{3}{2}\log(\tau) + \frac{1}{\xi\tau} - \frac{1}{2}\log(\xi)
+$$
+
+$$
+\xi \sim IG(1/2,1) \implies U(\xi) = \frac{3}{2}\log(\xi) + \frac{1}{\xi}
 $$
 
 $$
