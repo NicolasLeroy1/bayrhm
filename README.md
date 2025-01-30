@@ -43,7 +43,7 @@ $$
 $$
 
 $$
-\lambda_l\mid\lambda_{l-1}-\lambda_l,\sigma^2,\w_l^2 \sim \mathcal N(0,\sigma^2w_l^2) \quad \quad w_l \sim \mathcal C^+(0,1)
+\lambda_l\mid\lambda_{l-1}-\lambda_l,\sigma^2,w_l^2 \sim \mathcal N(0,\sigma^2w_l^2) \quad \quad w_l \sim \mathcal C^+(0,1)
 $$
 
 
@@ -62,7 +62,10 @@ $$
 The global marginal posterior opposite log density is :
 
 $$
-U(y\mid *) + \sum_l U(u_l) + \sum_l U(\lambda_l\mid\sigma^2,\w_l^2,\tau^2) + U(\sigma^2) + \sum_l U(w_l^2) +U(\tau^2) \\
+U(y\mid *) + \sum_l U(u_l) + \sum_l U(\lambda_l\mid\sigma^2,w_l^2,\tau^2) + U(\sigma^2) + \sum_l U(w_l^2) +U(\tau^2)
+$$
+
+$$
 U(\lambda,\tau^2,(u_l),\sigma^2,(w_l)) = \frac{\|y - \sum_l \lambda_l u_l\|^2}{\sigma^2} + \frac{\|u_l\|^2_{A_l^{-1}}} + \frac{\|\lambda\|^2_{W_l^2}}{\tau^2\sigma^2} + \frac{L+n}\log(\sigma^2) + \sum_l \log(w_l^2) + L\log(\tau^2) + \log(1+\tau^2) + \sum_l \log(1+w_l^2)
 $$
 
