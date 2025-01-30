@@ -23,27 +23,27 @@ All the regularization priors are used to shrink non-pertinent $\lambda_l$ coeff
 + The horseshoe prior doesn't assume similarity between adjacent genetic region and shrink all coefficients the same way.
 
 $$
-\lambda_l\mid\sigma^2,\tau^2,W^2 \sim \mathcal N(0,\sigma^2\tau^2W_l^2) \quad \quad \tau^2 \sim \mathcal C^+(0,1) \quad \quad w_l \sim \mathcal C^+(0,1)
+\lambda_l\mid\sigma^2,\tau^2,W^2 \sim \mathcal N(0,\sigma^2\tau^2W_l^2) \quad \quad \tau^2 \sim \mathcal C^+(0,1) \quad \quad w_l^2 \sim \mathcal C^+(0,1)
 $$
 
 + The fusion-horseshoe prior assume strong similarity between adjacent genetic regions and shrink only the regions at the end and beginning of chromosomes.
 
 $$
-\lambda_l - \lambda_{l-1} \mid \sigma^2,\tau^2,\omega_l^2 \sim \mathcal N(0,\sigma^2\tau^2\omega_l^2) \quad \quad \omega_l \sim \mathcal C^+(0,1)
+\lambda_l - \lambda_{l-1} \mid \sigma^2,\tau^2,\omega_l^2 \sim \mathcal N(0,\sigma^2\tau^2\omega_l^2) \quad \quad \omega_l^2 \sim \mathcal C^+(0,1)
 $$
 
 $$
-\lambda_1\mid\sigma^2,w_1^2 \sim \mathcal N(0,\sigma^2w_1^2) \quad \quad \lambda_L\mid\sigma^2,w_2^2 \sim \mathcal N(0,\sigma^2w_2^2) \quad \quad w_1,w_2 \sim \mathcal C^+(0,1)
+\lambda_1\mid\sigma^2,w_1^2 \sim \mathcal N(0,\sigma^2w_1^2) \quad \quad \lambda_L\mid\sigma^2,w_2^2 \sim \mathcal N(0,\sigma^2w_2^2) \quad \quad w_1^2,w_2^2 \sim \mathcal C^+(0,1)
 $$
 
 + The fused-horseshoe prior is a mix between the first and second prior , assuming similarity between adjacent regions, and shrinking all coefficients the same way.
 
 $$
-\lambda_l - \lambda_{l-1}\mid\sigma^2\tau^2\omega_l^2 \sim \mathcal N(0,\sigma^2\tau^2\omega_l^2) \quad \quad \omega_l \sim \mathcal C^+(0,1)
+\lambda_l - \lambda_{l-1}\mid\sigma^2\tau^2\omega_l^2 \sim \mathcal N(0,\sigma^2\tau^2\omega_l^2) \quad \quad \omega_l^2 \sim \mathcal C^+(0,1)
 $$
 
 $$
-\lambda_l\mid\lambda_{l-1}-\lambda_l,\sigma^2,w_l^2 \sim \mathcal N(0,\sigma^2w_l^2) \quad \quad w_l \sim \mathcal C^+(0,1)
+\lambda_l\mid\lambda_{l-1}-\lambda_l,\sigma^2,w_l^2 \sim \mathcal N(0,\sigma^2w_l^2) \quad \quad w_l^2 \sim \mathcal C^+(0,1)
 $$
 
 
