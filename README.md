@@ -52,13 +52,13 @@ $$
 We use an alternative representation of the Half Caucy distribution over $x^2$ through the following mixture of inverse-gammas for $x$ :
 
 $$
-x^2\sim C^+(0,1) \quad\Leftrightarrow\quad x|\xi \sim \mathcal{IG}(1/2,1/\xi) \quad \quad \xi \sim \mathcal{IG}(1/2,1)
+x^2\sim C^+(0,1) \quad\Leftrightarrow\quad x\mid \xi \sim \mathcal{IG}(1/2,1/\xi) \quad \quad \xi \sim \mathcal{IG}(1/2,1)
 $$
 
 The conditional distribution of the hyper-parameter is then :
 
 $$
-\xi|x \sim \mathcal{IG}(1/2,1/(1+x))
+\xi\mid x \sim \mathcal{IG}(1/2,1/(1+x))
 $$
 
 ## Marginal posterior distributions :
@@ -66,23 +66,23 @@ $$
 Let us write the opposite log densities of all distributions introduced :
 
 $$
-U(y\mid*) = \frac{\|y - \sum_l\lambda_lu_l\|^2}{\sigma^2} + n\log(\sigma^2)
+y\mid* \sim\mathcal N(\mu + \sum_l u_l,\sigma^2I_n) \implies U(y\mid*) = \frac{\|y - \mu - \sum_l\lambda_lu_l\|^2}{\sigma^2} + n\log(\sigma^2)
 $$
 
 $$
-U(u_l) = \|u_l\|^2_{A_l^{-1}}
+u_l \sim \mathcal N(0,A_l) \implies U(u_l) = \|u_l\|^2_{A_l^{-1}}
 $$
 
 $$
-U(\lambda_l\mid\sigma^2,\tau^2,w_l^2) = \frac{\lambda_l^2}{\sigma^2\tau^2w_l^2}
+\lambda_l\mid\sigma^2,w_l^2,\tau^2 \sim \mathcal N(0,\sigma^2\tau^2w_l^2) \implies U(\lambda_l\mid\sigma^2,\tau^2,w_l^2) = \frac{\lambda_l^2}{\sigma^2\tau^2w_l^2} + \log(\sigma^2) + \log(\tau^2) +\log(w_l^2)
 $$
 
 $$
-U(\tau^2) = \log(1+\tau^2)
+\tau^2 \sim \mathcal C^+(0,1) \implies U(\tau^2) = \log(1+\tau^2)
 $$
 
 $$
-U(w_l^2) = \log(1+\tau^2)
+\tau\mid\xi \sim IG(1/2,1/\xi) \quad \xi \sim IG(1/2,1) \implies U(\tau\mid\xi) = \frac{3}{2}\log(\tau) + \frac{1}{\xi\tau} + \frac{1}{2}\log(\xi)
 $$
 
 $$
