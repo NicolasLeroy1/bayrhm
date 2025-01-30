@@ -63,6 +63,32 @@ $$
 
 ## Marginal posterior distributions :
 
+Let us write the opposite log densities of all distributions introduced :
+
+$$
+U(y\mid*) = \frac{\|y - \sum_l\lambda_lu_l\|^2}{\sigma^2} + n\log(\sigma^2)
+$$
+
+$$
+U(u_l) = \|u_l\|^2_{A_l^{-1}}
+$$
+
+$$
+U(\lambda_l\mid\sigma^2,\tau^2,w_l^2) = \frac{\lambda_l^2}{\sigma^2\tau^2w_l^2}
+$$
+
+$$
+U(\tau^2) = \log(1+\tau^2)
+$$
+
+$$
+U(w_l^2) = \log(1+\tau^2)
+$$
+
+$$
+U(\sigma^2) = (a+1)\log(\sigma^2) + \frac{b}{\sigma^2}
+$$
+
 ### Horseshoe regularization :
 
 The global marginal posterior opposite log density is :
